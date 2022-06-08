@@ -1,0 +1,19 @@
+	//load tingkat
+	$('select[name="jurusan"]').on('change', function() {
+        var jurusanID = $(this).val();
+        if(jurusanID) {
+            $.ajax({
+                url: baseURL+'/penilaian/daftarnilai/getTingkatAjax/'+jurusanID,
+                type: "GET",
+                dataType: "json",
+                success:function(data) {
+                    //$('select[name="tingkat"]').empty();
+                    $.each(data, function(key, value) {
+                        $('select[name="tingkat"]').append('<option value="'+ value.id +'">'+ value.tingkat +'</option>');
+                    });
+                }
+            });
+        }else{
+            $('select[name="tingkat"]').empty();
+        }
+    });
