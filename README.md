@@ -1,6 +1,6 @@
 # SIAMAS
 
-#Sistem Adminsitrasi dan Manajemen Informasi Sekolah berbasis Codeigniter
+# Sistem Adminsitrasi dan Manajemen Informasi Sekolah berbasis Codeigniter
 
 Aplikasi sederhana untuk tata kelola administrasi sekolah
 
